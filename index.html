@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Notifications page</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap');
+  </style>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+  <!-- notifications part -->
+  <div class="noti_grid_container">
+    <h2>Notifications<span class="span_noti">3</span></h2>
+
+    <div class="noti_flex_container">
+      <p>Mark all as read</p>
+    </div>
+  </div>
+
+  <!-- unread content part -->
+  <div class="unread_grid_container">
+    <div class="unread_flex_container js_remove_class_background">
+      <img src="./assets/images/avatar-mark-webber.webp" alt="mark webber img">
+      <div>
+        <p><span class="name_span">Mark Webber</span> reacted to your recent post <span class="little_bold_text">My
+            first tournament today!</span> <span class="span_for_red_circle red_circle"></span></p>
+        <p class="time_ago_p">1m ago</p>
+      </div>
+    </div>
+
+    <div class="unread_flex_container js_remove_class_background">
+      <img src="./assets/images/avatar-angela-gray.webp" alt="">
+      <div>
+        <p><span class="name_span">Angela Gray</span> followed you <span class="span_for_red_circle red_circle"></span>
+        </p>
+        <p class="time_ago_p">5m ago</p>
+      </div>
+    </div>
+
+    <div class="unread_flex_container js_remove_class_background">
+      <img src="./assets/images/avatar-jacob-thompson.webp" alt="">
+      <div>
+        <p><span class="name_span">Jacob Thompson </span>has joined your group <span class="little_bold_text">Chess
+            Club</span>
+          <span class="span_for_red_circle red_circle"></span>
+        </p>
+        <p class="time_ago_p">1day ago</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- read content part -->
+  <div class="read_grid_container">
+    <div class="read_flex_container">
+      <img src="./assets/images/avatar-rizky-hasanuddin.webp" alt="">
+      <div>
+        <p><span class="name_span">Rizky Hasanuddin</span> sent you a private message</p>
+        <p class="time_ago_p">5days ago</p>
+        <div class="box">
+          Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and
+          I'm already having lots of fun and improving my game.
+        </div>
+      </div>
+    </div>
+
+    <div class="image-chess_grid_container">
+      <div class="read_flex_container">
+        <img src="./assets/images/avatar-kimberly-smith.webp" alt="">
+        <div>
+          <p><span class="name_span">Kimberly Smith</span> commented on your picture</p>
+          <p class="time_ago_p">1week ago</p>
+        </div>
+      </div>
+      <div class="image-chess_flex_container">
+        <img src="./assets/images/image-chess.webp" alt="">
+      </div>
+    </div>
+
+    <div class="read_flex_container">
+      <img src="./assets/images/avatar-nathan-peterson.webp" alt="">
+      <div>
+        <p><span class="name_span">Nathan Peterson</span> reacted to your recent post <span class="little_bold_text">5
+            end-game strategies to increase your win rate</span></p>
+        <p class="time_ago_p">2weeks ago</p>
+      </div>
+    </div>
+    <div class="read_flex_container">
+      <img src="./assets/images/avatar-anna-kim.webp" alt="">
+      <div>
+        <p><span class="name_span">Anna Kim</span> left the group <span class="little_bold_text">Chess Club</span></p>
+        <p class="time_ago_p">2weeks ago</p>
+      </div>
+    </div>
+  </div>
+
+  <div style="font-size: 11px; text-align: center; margin-top: 10px;">
+    Challenge by <a href="https://www.frontendmentor.io/challenges/notifications-page-DqK5QAmKbC"
+      style="color: hsl(228, 45%, 44%); ">Frontend Mentor</a>.
+    Coded by <a href="https://github.com/abdulloh3835?tab=repositories" style="color: hsl(228, 45%, 44%); ">Abdullokh
+      Asatullaev</a>.
+  </div>
+
+  <script src="./index.js" charset="UTF-8"></script>
+</body>
+
+</html>

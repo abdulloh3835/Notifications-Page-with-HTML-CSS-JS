@@ -1,0 +1,166 @@
+body {
+    margin: 2.5rem 4rem;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+p {
+    color: hsl(219, 12%, 42%);
+    font-size: 16px;
+}
+
+/* notification part */
+.noti_grid_container {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.span_noti {
+    background-color: hsl(219, 85%, 26%);
+    color: aliceblue;
+    padding: 1px 12px;
+    border-radius: 8px;
+    font-size: 1.3rem;
+    position: relative;
+    left: 13px;
+    bottom: 2px;
+}
+
+.noti_flex_container {
+    display: flex;
+    justify-content: end;
+}
+
+.noti_grid_container h2 {
+    margin-top: 5px;
+    color: hsl(224, 21%, 14%);
+}
+
+.noti_grid_container p {
+    color: hsl(219, 14%, 63%);
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 17px;
+}
+
+/* unread content part */
+img {
+    width: 50px;
+    height: 50px;
+}
+
+.unread_grid_container {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 8px;
+}
+
+.unread_flex_container {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    padding: 0 1rem;
+    /* background-color: hsl(210, 60%, 98%);
+    border-radius: 10px; */
+}
+
+.name_span {
+    color: hsl(224, 21%, 14%);
+    font-weight: 800;
+}
+
+.unread_flex_container p.time_ago_p {
+    position: relative;
+    bottom: 10px;
+    margin-bottom: 5px;
+    font-size: 15px;
+    color: hsl(219, 14%, 63%);
+}
+
+.little_bold_text {
+    font-weight: 800;
+    margin-left: 3px;
+    color: hsl(219, 12%, 42%);
+}
+
+.red_circle {
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+    background-color: hsl(1, 90%, 64%);
+    display: inline-block;
+    margin-left: 3px;
+}
+
+/* read content part */
+.read_grid_container {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 18px;
+    padding: 8px 0;
+}
+
+.read_flex_container {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    padding-left: 1rem;
+    background-color: hsl(0, 0%, 100%);
+}
+
+.read_flex_container p.time_ago_p {
+    position: relative;
+    bottom: 10px;
+    font-size: 16px;
+    color: hsl(219, 14%, 63%);
+    margin-bottom: 0;
+}
+
+.box {
+    border: 1.5px solid hsl(211, 68%, 94%);
+    /* Set border width, type and color */
+    padding: 14px;
+    color: hsl(219, 12%, 42%);
+    border-radius: 5px;
+}
+
+
+/* for image-chess pic to be at the end of the raw responsibly, needed: seperate grid and flex inside. */
+.image-chess_grid_container {
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 95%;
+}
+
+.image-chess_flex_container {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.image-chess_flex_container>img {
+    margin-left: 20px;
+}
+
+/* for hovering */
+.name_span:hover,
+.little_bold_text:hover,
+.noti_grid_container p:hover {
+    color: hsl(219, 85%, 26%);
+}
+
+.box:hover {
+    background-color: hsl(211, 68%, 94%);
+}
+
+/* media query part for phone_size */
+@media (max-width: 700px) {
+    body {
+        margin: 2.5rem;
+    }
+}
+
+/* classes for js to toggle unread messages */
+.js_remove_class_background {
+    background-color: hsl(210, 60%, 98%);
+    border-radius: 10px;
+}
